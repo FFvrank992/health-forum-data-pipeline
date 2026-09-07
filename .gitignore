@@ -1,0 +1,51 @@
+# --- Corpus data: never committed -------------------------------------------
+# Raw output contains real usernames and un-redacted PII. Cleaned output is
+# de-identified but is still scraped third-party health content. Neither belongs
+# in version control. The directories are kept via .gitkeep.
+data/*
+!data/raw/
+!data/clean/
+data/raw/*
+!data/raw/.gitkeep
+data/clean/*
+!data/clean/.gitkeep
+
+# Ad-hoc exports produced outside the pipeline
+womenheart_share_*.csv
+
+# --- Logs --------------------------------------------------------------------
+logs/*
+!logs/.gitkeep
+
+# --- Run state ---------------------------------------------------------------
+.pipeline.lock
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Editors / OS ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,4 @@
+# Python 3.9+ required (str.removeprefix). Developed and tested on 3.12.
+requests>=2.31
+beautifulsoup4>=4.12
+pandas>=2.0
